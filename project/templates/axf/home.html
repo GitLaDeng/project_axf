@@ -1,0 +1,37 @@
+{% extends 'axf/base.html' %}
+
+{% load static from staticfiles %}
+{% block linkscript %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/css/home.css' %}">
+    <script src="{% static 'home/js/home.js' %}"></script>
+
+{% endblock %}
+
+
+{% block base %}
+
+<div id="home">
+
+    <!-- 轮播-->
+    <!-- 轮播容器-->
+    <section class="swiper-container" id="topSwiper">
+        <!-- wrapper 包装器(墙) swiper中的 -->
+        <div class="swiper-wrapper">
+            {% for item in wheelsList %}
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="{{ item.img }}" alt="">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+
+    </section>
+
+
+</div>
+
+
+
+{% endblock %}

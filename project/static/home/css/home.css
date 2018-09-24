@@ -1,0 +1,31 @@
+#home{
+    padding: 1.5rem 0;
+    font-family: "Microsoft YaHei", "Helvetica Neue",
+    Helvetica,STHeiTi,Arial,sans-serif;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3rem;
+    position:fixed;
+}
+
+#topSwiper{
+    height: 3.95rem;
+    width: 10rem;
+    overflow: hidden;
+}
+#topSwiper div a{
+    display: inline-block;
+
+}
+
+
+
+
+
+.mainInfo > section > ul > li > button > span{
+    position: relative;
+    top:-0.05rem;
+    margin: auto;
+}
+
